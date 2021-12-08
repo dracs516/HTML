@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <title>Hello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #af71cf;
+        }
+
+        #first {
+            float: left;
+            width: 47%;
+        }
+
+        #second {
+            float: right;
+            width: 47%;
+        }
+
+        #third {
+            /* float: left; */
+            clear: both;
+            width: 98%;
+        }
+
+        .container {
+            border: #a132b5 2.75px solid;
+            border-radius: 10px;
+            background: #d5b5ff;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            width: 1000px;
+            background-color: #b560b2;
+            border: 2.75px solid #681989;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+
+        h3,
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: justify;
+        }
+
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: black;
+            border-radius: 40px;
+            padding: 5px 10px;
+            height: 62px;
+        }
+
+        #navig {
+
+            position: fixed;
+            position: relative;
+            position: static;
+            position: absolute;
+            position: sticky;
+
+            top: 0px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            /* text-decoration: none; */
+        }
+
+        .navbar li {
+            padding: 2px 10px;
+            margin-right: 50px;
+            float: left;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar li:hover {
+            font-size: 110%;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .navbar a:hover {
+            text-decoration: none;
+            color: rgb(122, 122, 122);
+
+        }
+
+        .navbar img {
+            float: right;
+            margin-right: 45px;
+            margin-left: 5px;
+
+        }
+
+        #search {
+            float: right;
+            padding-right: 50px;
+            border-radius: 50px;
+            border: 2px black;
+        }
+
+        #search:hover {
+            background-color: rgb(182, 182, 182);
+        }
+
+        .dabba {
+            border: 2px red solid;
+            border-radius: 10px;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+
+        .dabba1 {
+            border: 2px purple solid;
+            display: inline-block;
+            border-radius: 10px;
+            margin: 2px 0px;
+            width: 32%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navig">
+        <!-- <div id="navig"> -->
+        <ul>
+
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Location</a></li>
+            <li> <a href="#">Contact</a></li>
+
+            <a href="#search"><img
+                    src="https://www.pngall.com/wp-content/uploads/8/Magnifying-Glass-Search-PNG-Clipart.png"
+                    width=15px></a>
+            <input type="text" placeholder="Search" id="search">
+        </ul>
+        <!-- </div> -->
+    </nav>
+    <div class="box">
+        <h1>Welcome to my world!!!</h1>
+        <div class="container" id="first">
+            <h3>FIRST: Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum quos aperiam commodi cupiditate
+                quibusdam! Soluta nulla expedita labore, quidem ea neque? Ipsam asperiores, ex tempore quod beatae
+                omnis,
+                eos eligendi amet repellat itaque aspernatur earum! Voluptate non qui voluptates laudantium minus,
+                aliquam
+                natus temporibus adipisci expedita hic sapiente odit.</p>
+        </div>
+        <div class="container" id="second">
+            <h3>SECOND: Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum quos aperiam commodi cupiditate
+                quibusdam! Soluta nulla expedita labore, quidem ea neque? Ipsam asperiores, ex tempore quod beatae
+                omnis,
+                eos eligendi amet repellat itaque aspernatur earum! Voluptate non qui voluptates laudantium minus,
+                aliquam
+                natus temporibus adipisci expedita hic sapiente odit.</p>
+        </div>
+        <div class="container" id="third">
+            <h3>THIRD: Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum quos aperiam commodi cupiditate
+                quibusdam! Soluta nulla expedita labore, quidem ea neque? Ipsam asperiores, ex tempore quod beatae
+                omnis,
+                eos eligendi amet repellat itaque aspernatur earum! Voluptate non qui voluptates laudantium minus,
+                aliquam
+                natus temporibus adipisci expedita hic sapiente odit.</p>
+        </div>
+    </div>
+
+    <div class="dabba">
+        <div class="dabba1">
+            <h4>
+                FIRST
+            </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos distinctio, quibusdam impedit iste,
+                obcaecati odio eligendi quaerat, suscipit incidunt mollitia sit tenetur ratione libero eaque? Reiciendis
+                debitis, rem quisquam soluta modi quibusdam laboriosam ullam laudantium ipsam omnis ipsa consequuntur
+                similique delectus? Ipsa aut eaque quibusdam nulla vitae facilis ullam rem?</p>
+        </div>
+        <div class="dabba1">
+            <h4>
+                SECOND
+            </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos distinctio, quibusdam impedit iste,
+                obcaecati odio eligendi quaerat, suscipit incidunt mollitia sit tenetur ratione libero eaque? Reiciendis
+                debitis, rem quisquam soluta modi quibusdam laboriosam ullam laudantium ipsam omnis ipsa consequuntur
+                similique delectus? Ipsa aut eaque quibusdam nulla vitae facilis ullam rem?</p>
+        </div>
+        <div class="dabba1">
+            <h4>
+                THIRD
+            </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos distinctio, quibusdam impedit iste,
+                obcaecati odio eligendi quaerat, suscipit incidunt mollitia sit tenetur ratione libero eaque? Reiciendis
+                debitis, rem quisquam soluta modi quibusdam laboriosam ullam laudantium ipsam omnis ipsa consequuntur
+                similique delectus? Ipsa aut eaque quibusdam nulla vitae facilis ullam rem?</p>
+        </div>
+    </div>
+</body>
+
+</html>
