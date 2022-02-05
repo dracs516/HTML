@@ -1,0 +1,24 @@
+<!-- Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 25 and outputs HTML text that displays the resulting values in an HTML table format -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Table</title>
+</head>
+
+<body>
+
+    <script>
+        document.write("<table> <tr> <th>Number</th> <th>Square</th> <th>Cube</th> </tr>");
+
+        for (var n = 0; n <= 25; n++) {
+            document.write("<tr><td>" + n + "</td><td>" + n * n + "</td><td>" + n * n * n + "</td></tr>")
+        }
+
+        document.write("</table>");
+
+    </script>
+
+</body>
+
+</html>

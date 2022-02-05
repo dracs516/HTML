@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First JavaScript Program</title>
+    <script type="text/javascript">
+        document.write("JS inside Head", "<br>");
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        document.write("JS inside Body", "<br>");
+        console.log("Hello");
+
+        alert("Dont enter the site please or you will not be able to get out of it");
+        registration = confirm("Do you really want to enter even after the warning???");
+        name = prompt("Okay! You didnt listen.... Now enter your name:::: ");
+
+        if (name == "Abhay") {
+            alert("Hello Abhay!");
+        }
+        else {
+            alert("Okay! So You wanted to enter the site....But sorry you are not Abhay!!!! So get out of here");
+        }
+
+        var s = "ABHAY";
+
+        document.write("My name is ABHAY", "<br>");
+        document.write("The third letter of my name is:::: ", s.charAt(2), "<br>");
+        document.write("The letter 'Y' appears in my name at the position:::: ", s.indexOf('Y') + 1, "<br>");
+        document.write("The letter from position 3 to 5 of my name is:::: ", s.substring(2, 6), "<br>");
+        document.write("My name in lowercase letters is written as::::", s.toLowerCase());
+
+    </script>
+
+</body>
+
+</html>

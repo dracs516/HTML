@@ -1,0 +1,86 @@
+<!-- Apply CSS different properties for font and color specifications and background color and design a web page and upload a html file with your USN number as file name -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Styles</title>
+    <style>
+        body {
+            background-color: chartreuse;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: orange;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            justify-content: center;
+            padding: 3px 20px;
+            border-radius: 20px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+            font-weight: bolder;
+            margin: 0px 10px;
+        }
+
+        #p1 {
+            color: red;
+        }
+
+        #p2 {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <p id="p1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure optio nobis harum quaerat odit excepturi
+        eligendi
+        neque explicabo nesciunt asperiores magnam impedit tempora, ad laboriosam repellendus voluptatem sapiente ipsum?
+        Vel maiores reiciendis dicta corrupti assumenda quis consequuntur. Commodi recusandae harum quis maiores minus
+        iusto praesentium sunt esse! Hic, adipisci. Esse?</p>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error sunt quo quaerat, velit laborum, ab atque
+        rerum
+        temporibus, officia eum quia harum dicta aliquid unde deserunt dolorem expedita. Dolor sequi quaerat culpa et ab
+        voluptates velit, alias fugit placeat, ad iusto iste adipisci, iure provident impedit explicabo voluptatum illo
+        optio facere ipsum excepturi modi dolores. Esse maiores, ullam dolorem nemo illo asperiores. Laboriosam eveniet
+        dignissimos, quisquam voluptate enim earum expedita cupiditate eos fuga delectus, ipsam rem vitae. Provident,
+        doloremque ab!</p>
+</body>
+
+</html>

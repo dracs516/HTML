@@ -1,0 +1,108 @@
+<!-- Create  an HTML document that
+describes nested ordered lists of cars. The outer list    must have three entries: compact, midsize,
+and sports. Inside each of these three lists there     must be two sub lists of body styles. The
+compact and midsize car sub lists are coupe and      convertible. Each body-style sub list
+must have at least three entries, each of which is the     make and Model of particular car that fits
+the category. The outer list must use uppercase    Roman numerals, the middle lists must use
+uppercase letters and the inner lists must use Arabic    numerals. 
+
+The background color for the
+compact car list must be pink; for the midsize car list it    must be blue; for the sports car list, it
+must be red. All of the styles must be in a document style   sheet. Repeat this using external style
+sheet. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>List</title>
+    <link rel="stylesheet" href="5css1BM20IS193.css">
+</head>
+
+<body>
+
+    <ol type="I">
+
+        <li class="compact">Compact</li>
+
+        <ol type="A" class="compact">
+
+            <li>Coupe</li>
+
+            <ol type="1">
+
+                <li>2022 Subaru BRZ</li>
+                <li>2022 BMW 4 Series</li>
+                <li>2021 Polestar 1</li>
+
+            </ol>
+
+            <li>Convertible</li>
+
+            <ol type="1">
+
+                <li>2022 Audi A5</li>
+                <li>2022 Chevrolet Corvette</li>
+                <li>2021 Mazda MX-5 Miata</li>
+
+            </ol>
+
+        </ol>
+
+        <li class="midsize">Midsize</li>
+
+        <ol type="A" class="midsize">
+
+            <li>Coupe</li>
+
+            <ol type="1">
+
+                <li>2021 Ford Mustang</li>
+                <li>2022 Chevrolet Camaro</li>
+                <li>2021 Lexus LC</li>
+
+            </ol>
+
+            <li>Convertible</li>
+
+            <ol type="1">
+
+                <li>Audi A4 Cabriolet</li>
+                <li>Audi RS5 Cabriolet</li>
+                <li>BMW 1-Series Convertible</li>
+
+            </ol>
+
+        </ol>
+
+        <li class="sports">Sports</li>
+
+        <ol type="A" class="sports">
+
+            <li>Coupe</li>
+
+            <ol type="1">
+
+                <li>Lamborghini Aventador</li>
+                <li>Audi e-tron</li>
+                <li>Jaguar F-TYPE</li>
+
+            </ol>
+
+            <li>Convertible</li>
+
+            <ol type="1">
+
+                <li>Mazda MX-5 Miata</li>
+                <li>Mercedes-Benz SLK</li>
+                <li>Audi R8 Spyder</li>
+
+            </ol>
+
+        </ol>
+
+    </ol>
+
+</body>
+
+</html>

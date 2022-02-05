@@ -1,0 +1,48 @@
+<!-- Develop and demonstrate a HTML5 file that includes JavaScript script that
+uses functions for the following problems:
+a. Parameter: A string
+Output: The position in the string of the left-most vowel
+b. Parameter: A number
+Output: The number with its digits in the reverse order -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Function</title>
+</head>
+
+<body>
+    <button onclick="string()">Left-most Vowel</button>
+    <button onclick="revnum()">Reverse Number</button>
+
+    <script type="text/javascript">
+
+        function string() {
+            var str = prompt("Enter a string::::");
+
+            document.write("The string is: " + str + "<br>");
+
+            for (var i = 0; i < str.length; i++) {
+                if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u' || str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) == 'I' || str.charAt(i) == 'O' || str.charAt(i) == 'U') {
+                    document.write("The leftmost vowel is: " + str.charAt(i) + "<br>");
+                    var pos = i + 1;
+                    document.write("The position of the vowel " + str.charAt(i) + " is: " + pos + "<br>");
+                    exit;
+                }
+            }
+        }
+
+        function revnum() {
+            var num = prompt("Enter a number:::::");
+            var rev;
+            for (var i = 0; i < num.length; i++) {
+
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

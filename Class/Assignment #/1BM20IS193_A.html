@@ -1,0 +1,96 @@
+<!-- A. Create, an HTML document that has a form with the following controls: Apply
+appropriate CSS to style the web page.
+1. A text box to collect the user’s name
+2. Four checkboxes, one each for the following items:
+ Four 100-watt light bulbs for $2.39
+ Eight 100-watt light bulbs for $4.29
+ Four 100-watt, long-life light bulbs for $3.95
+ Eight 100-watt, long-life light bulbs for $7.49
+3. A collection of three radio buttons that are labeled as follows:
+ Visa
+ MasterCard
+ Discover
+B. Demonstrate for the same form submit and reset onclick event and input the
+values and print the input values on the web browser. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            background-color: dimgray;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        form {
+            margin: 5px;
+            padding: 10px;
+            background-color: darkkhaki;
+        }
+
+        .box {
+            border: 2px solid bisque;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        function submit() {
+            alert("You have successfully submitted the form");
+        }
+        function reset() {
+            alert("You have successfully reset the form");
+        }
+    </script>
+
+    <form>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" class="box">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" class="box"><br>
+
+        <label for="bulb">Bulbs:</label><br>
+
+        <input type="checkbox" name="bulb" id="2.39">
+        <label for="2.39">Four 100-watt light bulbs for $2.39</label><br>
+
+        <input type="checkbox" name="bulb" id="4.29">
+        <label for="4.29">Eight 100-watt light bulbs for $4.29</label><br>
+
+        <input type="checkbox" name="bulb" id="3.95">
+        <label for="3.95">Four 100-watt, long-life light bulbs for $3.95</label><br>
+
+        <input type="checkbox" name="bulb" id="7.49">
+        <label for="7.49">Eight 100-watt, long-life light bulbs for $7.49</label><br>
+
+
+        <label for="payment">Payment Methods:</label><br>
+        <input type="radio" name="payment" id="visa">
+        <label for="visa">Visa</label>
+
+        <input type="radio" name="payment" id="mcard">
+        <label for="mcard">MasterCard</label>
+
+        <input type="radio" name="payment" id="discover">
+        <label for="discover">Discover</label><br>
+
+        <input type="submit" value="Submit" class="box" onclick="alert('You have successfully submitted the form');">
+        <input type="reset" value="Reset" class="box" onclick="alert('You have successfully reset the form');">
+
+        <!-- <input type="submit" value="Submit" onclick="submit();">
+        <input type="reset" value="Reset" onclick="reset();"> -->
+    </form>
+</body>
+
+</html>
