@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <style>
+        /* 
+        .container {
+            border: solid 2px red;
+            margin: 2px;
+            padding: 10px;
+        }
+
+        .list {
+            border: solid 2px rgb(202, 202, 1);
+        }
+
+        #btn {
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border-radius: 8px;
+            border: rgb(0, 0, 0) 3px solid;
+            cursor: pointer;
+        }
+
+
+        #btn img {
+            height: 30px;
+        }
+
+        .dark {
+            background-color: black;
+            color: blanchedalmond;
+        }
+
+        .dark #btn img {
+            src: url("https://cdn0.iconfinder.com/data/icons/multimedia-line-30px/30/sun_light_mode_day-512.png");
+        } */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafafa;
+            background-color: cadetblue;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            transition: background 0.2s linear;
+        }
+
+        body.dark {
+            background: #292c35;
+        }
+
+        body.dark .label {
+            background-color: #111;
+            background-color: grey;
+        }
+
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+
+        .label {
+            /* border: cadetblue 2px solid; */
+            background-color: #111;
+            background-color: orangered;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            position: relative;
+            height: 26px;
+            width: 55px;
+            transform: scale(1.5);
+        }
+
+        .label .ball {
+            background-color: red;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: 22px;
+            width: 22px;
+            transform: translateX(0px);
+            transition: transform 0.2s linear;
+        }
+
+        .checkbox:checked+.label .ball {
+            transform: translateX(29px);
+        }
+
+        .label img {
+            margin-left: 0;
+            padding-left: 0;
+            /* padding-right: 4px; */
+        }
+
+        /* 
+        .fa-moon {
+            color: #f1c40f;
+        }
+
+        .fa-sun {
+            color: #f39c12;
+        } */
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <input type="checkbox" class="checkbox" id="chk">
+
+        <label for="chk" class="label">
+            <img src="s.png" alt="" height="22px" id="sun">
+            <img src="m.png" alt="" height="18px" id="moon">
+            <i class='fas fa-moon'></i>
+            <i class='fas fa-sun'></i>
+            <div class="ball"></div>
+
+        </label>
+
+    </div>
+    <!-- <div class="container">
+
+        <h1>
+            This is a random heading
+        </h1>
+
+        <div id="id1"></div>
+
+        <div class="content">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam veritatis possimus maiores animi
+                velit, amet laudantium sequi excepturi et nulla, a voluptates officia! Voluptate expedita officiis hic
+                architecto porro alias? Consectetur ducimus quidem quod id consequuntur reprehenderit, iusto dicta
+                repellendus optio praesentium nihil, nostrum officia. Dolore aperiam inventore earum sit officiis,
+                tempore, corporis suscipit consectetur error itaque blanditiis nam ipsa beatae vitae doloremque aut,
+                maxime delectus facere mollitia repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur rem excepturi alias sed tenetur maxime dicta, culpa, ab voluptates perferendis ducimus?
+                Voluptate, expedita?
+            </p>
+        </div>
+    </div>
+
+    <div class="list">
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+
+
+    <button id="btn" onclick="toggleDarkLight()"><img
+        src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png"
+        alt="Dark" id="toggle"></button> -->
+
+    <script>
+        const chk = document.getElementById('chk');
+
+        chk.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
+
+            // var a = 69;
+        // var b = "Abhay";
+        // console.log(a);
+        // console.log(b);
+        // var string = `${b} ko favourite position is ${a}`;
+        // console.log(string);
+        // var len = string.length;
+        // console.log(`the lenght of the string "${string}" is ${len}`);
+        // console.log("Abhay\nis a good\tboy and he\\n is very daring person\b");
+
+        // document.getElementById("id1").innerHTML = "<h1>My name is bakwas thai gayo</h1>";
+
+
+        // var str = "This is a game of thrones where the only work you can do is to die";
+        // console.log(str);
+
+        // var strpos = str.indexOf("is");
+        // console.log(strpos);
+
+        // var postwo = str.lastIndexOf("is");
+        // console.log(postwo);
+
+        // var substr = str.slice(1, 15);
+        // console.log(substr);
+        // var substr = str.substring(1, 15);
+        // console.log(substr);
+        // var substr = str.substr(1, 15);
+        // console.log(substr);
+
+        // var replaced = str.replace("game", "lado");
+        // console.log(str);
+        // console.log(replaced);
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+        // var newstr = str.concat("Fuck You");
+        // console.log(newstr);
+
+
+        // var strwhite = "       this is      fuckkkkkkk        u hellll      ";
+
+        // console.log(strwhite);
+        // console.log(strwhite.trim());
+
+        // var char3 = str.charAt(2);
+        // console.log(char3);
+
+        // var charCode = str.charCodeAt(2);
+        // console.log(charCode);
+
+        // let dunno = "afjnermsdngj";
+        // console.log(dunno);
+        // {
+        //     let dunno = "oirjgijij";
+        //     console.log(dunno);
+        // }
+        // console.log(dunno);
+
+
+        // let age = 18;
+        // if (age > 18) {
+        //     console.log("Drink u idiot");
+        // }
+        // else if (age == 18) {
+        //     console.log("U also fuck off");
+        // }
+        // else {
+        //     console.log("Fuckkk offff u bastard");
+        // }
+
+
+        // let friend = ["Abhay", "Arpan", "Dhiraj", "Sunil"];
+        // friend.forEach(function f(element) {
+        //     console.log("Hello, " + element);
+        // });
+
+        // for (element of friend) {
+        //     console.log("Hello Again, " + element);
+
+        // }
+
+        // let dost = {
+        //     name: "Abhay",
+        //     age: 18,
+        //     gali: "chikne",
+        // }
+
+        // for (key in dost) {
+        //     console.log(`The ${key} of the dost is ${dost[key]}`);
+        // }
+
+        // function toggleDarkLight() {
+        //     document.getElementById((toggle).src = "https://cdn0.iconfinder.com/data/icons/multimedia-line-30px/30/sun_light_mode_day-512.png");
+        //     // let btn = getElementById("btn");
+        //     let body = document.body;
+        //     body.classList.toggle("dark");
+
+        // }
+
+    </script>
+
+</body>
+
+</html>
